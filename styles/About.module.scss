@@ -169,13 +169,20 @@ $color-3: #818181;
         .image {
           position: relative;
           width: 65%;
-          .frame {
+         .frame {
             position: absolute;
             width: 100%;
             height: 100%;
             border-right: 2px solid #fff;
             border-bottom: 2px solid #fff;
-            right: -4%;
+            right: -5%;
+            bottom: -5%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -3%;
             bottom: -3%;
           }
         }
@@ -267,7 +274,14 @@ $color-3: #818181;
             height: 100%;
             border-right: 2px solid #fff;
             border-bottom: 2px solid #fff;
-            right: -4%;
+            right: -5%;
+            bottom: -5%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -3%;
             bottom: -3%;
           }
         }
