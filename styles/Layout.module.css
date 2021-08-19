@@ -1,0 +1,7 @@
+.main {
+  height: 90vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+/*# sourceMappingURL=Layout.module.css.map */

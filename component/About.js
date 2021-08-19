@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import profilePic from '../public/natachi.jpg';
-
 import aboutStyle from '../styles/About.module.scss';
 
 function About() {

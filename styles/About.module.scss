@@ -92,6 +92,94 @@ $color-3: #818181;
   }
 }
 
+.about {
+  color: $color-2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+
+  .aboutContent {
+    width: 100%;
+    height: 100%;
+    margin-left: 7rem;
+
+    .aboutTitle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+      h2 {
+        font-size: 2rem;
+      }
+
+      .hr {
+        width: 20rem;
+        height: 2px;
+        background-color: rgb(155, 153, 153);
+        margin-left: 2rem;
+      }
+    }
+
+    .aboutBox {
+      display: flex;
+      align-items: center;
+
+      .aboutBox_text {
+        width: 50%;
+        margin-right: 2rem;
+        p {
+          color: #b4b4b4;
+          padding-bottom: 0.6rem;
+        }
+
+        ul {
+          list-style-type: none;
+          color: #b4b4b4;
+          width: 100%;
+
+          display: grid;
+          grid-template-columns: auto auto;
+
+          li {
+            display: flex;
+            align-items: center;
+            div {
+              width: 10px;
+              height: 10px;
+              background-color: $color-2;
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+
+      .image {
+        width: 18rem;
+        height: 100%;
+        position: relative;
+        .frame {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-right: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          right: -5%;
+          bottom: -5%;
+          transition: 0.4s ease;
+          z-index: 2;
+        }
+
+        .frame:hover {
+          right: -3%;
+          bottom: -3%;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .about {
     color: $color-2;
@@ -169,7 +257,7 @@ $color-3: #818181;
         .image {
           position: relative;
           width: 65%;
-         .frame {
+          .frame {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -268,6 +356,474 @@ $color-3: #818181;
         .image {
           position: relative;
           width: 50%;
+          .frame {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            right: -3%;
+            bottom: -3%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -2%;
+            bottom: -2%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// landscape
+
+@media only screen and (min-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    color: $color-2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    .aboutContent {
+      width: 100%;
+      height: 100%;
+      margin-left: 1rem;
+
+      .aboutTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        .hr {
+          width: 14rem;
+          height: 2px;
+          background-color: rgb(155, 153, 153);
+          margin-left: 1rem;
+        }
+      }
+
+      .aboutBox {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .aboutBox_text {
+          width: 70%;
+          overflow: scroll;
+          height: 11rem;
+          p {
+            color: #b4b4b4;
+            padding-bottom: 0.6rem;
+          }
+
+          ul {
+            list-style-type: none;
+            color: #b4b4b4;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            li {
+              display: flex;
+              align-items: center;
+              div {
+                width: 10px;
+                height: 10px;
+                background-color: $color-2;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+
+        .image {
+          width: 9rem;
+          height: 100%;
+          position: absolute;
+          right: 2%;
+          .frame {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 140px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            right: -5%;
+            bottom: 30%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -3%;
+            bottom: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 568px) and (min-device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    color: $color-2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    .aboutContent {
+      width: 100%;
+      height: 100%;
+      margin-left: 1rem;
+
+      .aboutTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        .hr {
+          width: 14rem;
+          height: 2px;
+          background-color: rgb(155, 153, 153);
+          margin-left: 1rem;
+        }
+      }
+
+      .aboutBox {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .aboutBox_text {
+          width: 70%;
+          overflow: scroll;
+          height: 11rem;
+          p {
+            color: #b4b4b4;
+            padding-bottom: 0.6rem;
+          }
+
+          ul {
+            list-style-type: none;
+            color: #b4b4b4;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            li {
+              display: flex;
+              align-items: center;
+              div {
+                width: 10px;
+                height: 10px;
+                background-color: $color-2;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+
+        .image {
+          width: 11rem;
+          height: 100%;
+          position: absolute;
+          right: 2%;
+          .frame {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 140px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            right: -5%;
+            bottom: 30%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -3%;
+            bottom: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    color: $color-2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    .aboutContent {
+      width: 100%;
+      height: 100%;
+      margin-left: 1rem;
+
+      .aboutTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        .hr {
+          width: 14rem;
+          height: 2px;
+          background-color: rgb(155, 153, 153);
+          margin-left: 1rem;
+        }
+      }
+
+      .aboutBox {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .aboutBox_text {
+          width: 70%;
+          overflow: scroll;
+          height: 15rem;
+          p {
+            color: #b4b4b4;
+            padding-bottom: 0.6rem;
+          }
+
+          ul {
+            list-style-type: none;
+            color: #b4b4b4;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            li {
+              display: flex;
+              align-items: center;
+              div {
+                width: 10px;
+                height: 10px;
+                background-color: $color-2;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+
+        .image {
+          width: 9rem;
+          height: 100%;
+          position: absolute;
+          right: 2%;
+          .frame {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 140px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            right: -5%;
+            bottom: 30%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -3%;
+            bottom: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-device-width: 812px) and (min-device-height: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    color: $color-2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    .aboutContent {
+      width: 100%;
+      height: 100%;
+      margin-left: 1rem;
+
+      .aboutTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        margin-top: 1rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        .hr {
+          width: 14rem;
+          height: 2px;
+          background-color: rgb(155, 153, 153);
+          margin-left: 1rem;
+        }
+      }
+
+      .aboutBox {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .aboutBox_text {
+          width: 70%;
+          overflow: scroll;
+          height: 15rem;
+          p {
+            color: #b4b4b4;
+            padding-bottom: 0.6rem;
+          }
+
+          ul {
+            list-style-type: none;
+            color: #b4b4b4;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            li {
+              display: flex;
+              align-items: center;
+              div {
+                width: 10px;
+                height: 10px;
+                background-color: $color-2;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+
+        .image {
+          width: 9rem;
+          height: 100%;
+          position: absolute;
+          right: 2%;
+          .frame {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 140px;
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            right: -5%;
+            bottom: 30%;
+            transition: 0.4s ease;
+            z-index: 2;
+          }
+
+          .frame:hover {
+            right: -3%;
+            bottom: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (min-device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about {
+    color: $color-2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+
+    .aboutContent {
+      width: 100%;
+      height: 100%;
+      margin-left: 3rem;
+
+      .aboutTitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        h2 {
+          font-size: 2rem;
+        }
+
+        .hr {
+          width: 20rem;
+          height: 2px;
+          background-color: rgb(155, 153, 153);
+          margin-left: 2rem;
+        }
+      }
+
+      .aboutBox {
+        display: flex;
+        align-items: center;
+
+        .aboutBox_text {
+          width: 50%;
+          margin-right: 2rem;
+          height: 100%;
+          p {
+            color: #b4b4b4;
+            padding-bottom: 0.6rem;
+          }
+
+          ul {
+            list-style-type: none;
+            color: #b4b4b4;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: auto auto;
+
+            li {
+              display: flex;
+              align-items: center;
+              div {
+                width: 10px;
+                height: 10px;
+                background-color: $color-2;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+
+        .image {
+          width: 18rem;
+          height: 100%;
+          position: relative;
           .frame {
             position: absolute;
             width: 100%;
