@@ -1,0 +1,98 @@
+.project {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.project .project__content {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.project .project__content .projectTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.project .project__content .projectTitle h2 {
+  font-size: 2rem;
+}
+
+.project .project__content .projectTitle .hr {
+  width: 20rem;
+  height: 2px;
+  background-color: #9b9999;
+  margin-left: 2rem;
+}
+
+.project .project__content .project__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.project .project__content .project__card .project__thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+}
+
+.project .project__content .project__card .project__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.project .project__content .project__card .project__description h4 {
+  font-size: 1.75rem;
+}
+
+.project .project__content .project__card .project__description .textSummary {
+  width: 60%;
+  text-align: right;
+  padding: 1.5rem;
+  font-size: .95rem;
+  background-color: #111111;
+  z-index: 1;
+}
+
+.project .project__content .project__card .project__description .textSummary span {
+  width: 100%;
+}
+/*# sourceMappingURL=Project.module.css.map */
