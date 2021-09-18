@@ -17,7 +17,7 @@ function Project() {
           </span>
         </Fade>
 
-        <Fade bottom delay={500} duration={3500}>
+        <Fade bottom delay={500} duration={2500}>
           <div className={projectStyle.projects__container}>
             <div className={projectStyle.project__card}>
               <div className={projectStyle.project__thumbnail}>

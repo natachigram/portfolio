@@ -1,4 +1,5 @@
-import FadeIn from 'react-fade-in';
+import Fade from 'react-reveal/Fade';
+import Link from 'next/link';
 import heroStyle from '../styles/Hero.module.scss';
 
 const Hero = () => {
@@ -6,7 +7,7 @@ const Hero = () => {
     <>
       <section className={heroStyle.hero} id='home'>
         <div className={heroStyle.hero_container}>
-          <FadeIn transitionDuration={1600} delay={300}>
+          <Fade bottom duration={2000} delay={300}>
             <p>Hello, my name is </p>
             <h1>Nnamaka Natachi O.</h1>
             <h2>I am a frontend developer</h2>
@@ -15,8 +16,12 @@ const Hero = () => {
               digital experiences. Currently, I'm focused on building
               accessible, human-centered products.
             </p>
-            <button>Get In Touch</button>
-          </FadeIn>
+            <Link href='/#contact'>
+              <a>
+                <button>Get In Touch</button>
+              </a>
+            </Link>
+          </Fade>
         </div>
       </section>
     </>
