@@ -56,7 +56,7 @@ function About() {
             </div>
           </Fade>
 
-          <Fade top duration={3000} delay={2000}>
+          <Fade bottom duration={3000} delay={2000}>
             <div className={aboutStyle.image}>
               <div className={aboutStyle.frame}></div>
               <Image src={profilePic} alt='Picture of the author' />
