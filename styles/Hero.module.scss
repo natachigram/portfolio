@@ -16,6 +16,26 @@ $color-3: #a7a7a7;
       width: 100%;
       margin-left: 7rem;
 
+      .socialIcons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 8%;
+        bottom: 17%;
+
+        div {
+          height: 10rem;
+          width: 2px;
+          background-color: $color-2;
+          border-radius: 2px;
+        }
+
+        a {
+          margin-top: 1rem;
+        }
+      }
+
       p {
         color: $color-3;
         width: 50%;
@@ -101,8 +121,7 @@ $color-3: #a7a7a7;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
- .hero {
+  .hero {
     color: $color-2;
     display: flex;
     align-items: center;
@@ -133,11 +152,11 @@ $color-3: #a7a7a7;
       h2 {
         font-size: 1.5rem;
         line-height: 30px;
-        margin-bottom: .2rem;
+        margin-bottom: 0.2rem;
       }
 
       button {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         width: 10rem;
         height: 2.5rem;
         background-color: transparent;
@@ -152,11 +171,10 @@ $color-3: #a7a7a7;
       }
     }
   }
-  
 }
 
 @media only screen and (min-device-width: 812px) and (min-device-height: 375px) and (-webkit-min-device-pixel-ratio: 2) {
- .hero {
+  .hero {
     color: $color-2;
     display: flex;
     align-items: center;

@@ -1,6 +1,10 @@
 import Fade from 'react-reveal/Fade';
 import Link from 'next/link';
 import heroStyle from '../styles/Hero.module.scss';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Hero = () => {
   return (
@@ -22,6 +26,31 @@ const Hero = () => {
               </a>
             </Link>
           </Fade>
+
+          <div className={heroStyle.socialIcons}>
+            <div></div>
+
+            <Link href='/'>
+              <a>
+                <TwitterIcon />
+              </a>
+            </Link>
+            <Link href='/'>
+              <a>
+                <InstagramIcon />
+              </a>
+            </Link>
+            <Link href='/'>
+              <a>
+                <LinkedInIcon />
+              </a>
+            </Link>
+            <Link href='/'>
+              <a>
+                <GitHubIcon />
+              </a>
+            </Link>
+          </div>
         </div>
       </section>
     </>
