@@ -21,8 +21,9 @@ $color-3: #a7a7a7;
         flex-direction: column;
         align-items: center;
         position: fixed;
-        right: 8%;
+        right: 6%;
         bottom: 17%;
+        z-index: 2000;
 
         div {
           height: 10rem;
