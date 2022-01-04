@@ -21,7 +21,7 @@ function Project() {
           <div className={projectStyle.projects__container}>
             <div className={projectStyle.project__card}>
               <div className={projectStyle.project__thumbnail}>
-                <Link href='/'>
+                <Link href='https://netflix-clone-fa5ba.web.app/'>
                   <a className={projectStyle.thumb}>
                     <Image
                       src={netflix}

@@ -30,22 +30,22 @@ const Hero = () => {
           <div className={heroStyle.socialIcons}>
             <div></div>
 
-            <Link href='/'>
+            <Link href='https://mobile.twitter.com/natachijs'>
               <a>
                 <TwitterIcon />
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='https://www.instagram.com/natachi.js/'>
               <a>
                 <InstagramIcon />
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='https://www.linkedin.com/in/natachi-nnamaka-156a89209/'>
               <a>
                 <LinkedInIcon />
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='https://github.com/natachigram'>
               <a>
                 <GitHubIcon />
               </a>
