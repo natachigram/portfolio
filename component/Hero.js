@@ -16,8 +16,8 @@ const Hero = () => {
             <h1>Nnamaka Natachi O.</h1>
             <h2>I am a frontend developer</h2>
             <p className={heroStyle.aboutText}>
-              I'm a frontend developer specializing in building exceptional
-              digital experiences. Currently, I'm focused on building
+              I am a frontend developer specializing in building exceptional
+              digital experiences. Currently, I am focused on building
               accessible, human-centered products.
             </p>
             <Link href='/#contact'>
