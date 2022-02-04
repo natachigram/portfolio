@@ -10,7 +10,7 @@ const Contact = () => {
           </Fade>
           <Fade bottom delay={500} duration={2000}>
             <p>
-              I'm looking for any new opportunities, my inbox is always open.
+              I am looking for new opportunities, my inbox is always open.
               Whether you have a question or just want to say hi, I'll surely
               get back to you!
             </p>

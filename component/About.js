@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profilePic from '../public/natachi.jpg';
+import profilePic from '../public/natachi.png';
 import Fade from 'react-reveal/Fade';
 import aboutStyle from '../styles/About.module.scss';
 
@@ -26,9 +26,10 @@ function About() {
               </p>
               <p className={aboutStyle.hide}>
                 Speed-up to today, I've had the privilege of working at a
-                tech-charity community and as a freelancer. My main focus these
-                days is building accessible, inclusive, web products for a
-                variety of clients.
+                tech-charity community and as a{' '}
+                <strong>Frontend Devloper</strong>. My main focus these days is
+                building accessible, inclusive, web products for a variety of
+                clients.
               </p>
               <p>
                 Here are a few technologies I've been working with recently:
@@ -58,7 +59,6 @@ function About() {
 
           <Fade bottom duration={3000} delay={1000}>
             <div className={aboutStyle.image}>
-              <div className={aboutStyle.frame}></div>
               <Image src={profilePic} alt='Picture of the author' />
             </div>
           </Fade>

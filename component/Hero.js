@@ -1,4 +1,5 @@
 import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 import Link from 'next/link';
 import heroStyle from '../styles/Hero.module.scss';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -27,30 +28,34 @@ const Hero = () => {
             </Link>
           </Fade>
 
-          <div className={heroStyle.socialIcons}>
-            <div></div>
+          {/* social media icons */}
+          <Pulse delay={1000} duration={2000} forever={true}>
+            <div className={heroStyle.socialIcons}>
+              <div></div>
 
-            <Link href='https://mobile.twitter.com/natachijs'>
-              <a>
-                <TwitterIcon />
-              </a>
-            </Link>
-            <Link href='https://www.instagram.com/natachi.js/'>
-              <a>
-                <InstagramIcon />
-              </a>
-            </Link>
-            <Link href='https://www.linkedin.com/in/natachi-nnamaka-156a89209/'>
-              <a>
-                <LinkedInIcon />
-              </a>
-            </Link>
-            <Link href='https://github.com/natachigram'>
-              <a>
-                <GitHubIcon />
-              </a>
-            </Link>
-          </div>
+              <Link href='https://mobile.twitter.com/natachijs'>
+                <a>
+                  <TwitterIcon />
+                </a>
+              </Link>
+
+              <Link href='https://www.instagram.com/natachi.js/'>
+                <a>
+                  <InstagramIcon />
+                </a>
+              </Link>
+              <Link href='https://www.linkedin.com/in/natachi-nnamaka-156a89209/'>
+                <a>
+                  <LinkedInIcon />
+                </a>
+              </Link>
+              <Link href='https://github.com/natachigram'>
+                <a>
+                  <GitHubIcon />
+                </a>
+              </Link>
+            </div>
+          </Pulse>
         </div>
       </section>
     </>

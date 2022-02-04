@@ -83,6 +83,16 @@ $color-3: #a7a7a7;
       width: 100%;
       margin-left: 1rem;
       margin-right: 1rem;
+
+      .socialIcons {
+        position: fixed;
+        bottom: 35%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2000;
+      }
+
       p {
         color: $color-3;
         width: 100%;
@@ -136,6 +146,17 @@ $color-3: #a7a7a7;
       width: 100%;
       margin-left: 1rem;
       margin-right: 1rem;
+
+      // social media icons
+
+      .socialIcons {
+        position: fixed;
+        bottom: 35%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2000;
+      }
       p {
         color: $color-3;
         width: 100%;
@@ -189,6 +210,15 @@ $color-3: #a7a7a7;
       width: 100%;
       margin-left: 1rem;
       margin-right: 1rem;
+
+      .socialIcons {
+        position: fixed;
+        bottom: 35%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        z-index: 2000;
+      }
       p {
         color: $color-3;
         width: 100%;
