@@ -1,5 +1,8 @@
 import contactStyles from '../styles/Contact.module.scss';
 import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
+import Link from 'next/link';
+import SendIcon from '@material-ui/icons/Send';
 const Contact = () => {
   return (
     <section className={contactStyles.contact} id='contact'>
@@ -18,12 +21,16 @@ const Contact = () => {
         </div>
 
         <Fade bottom delay={1000} duration={2000}>
-          <form>
-            <input type='text' placeholder='Name' />
-            <input type='email' placeholder='Email Address' />
-            <textarea name='' id='' placeholder='Type in message'></textarea>
-            <button>Send Message</button>
-          </form>
+          <div className={contactStyles.contact__email}>
+            <Pulse delay={2000} duration={5000} forever={true}>
+              <Link href='mailto:natachigram@gmail.com'>
+                <span>
+                  <a>natachigram@gmail.com</a>
+                  <SendIcon />
+                </span>
+              </Link>
+            </Pulse>
+          </div>
         </Fade>
       </div>
     </section>
