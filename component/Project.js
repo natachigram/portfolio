@@ -4,6 +4,7 @@ import LaunchIcon from '@material-ui/icons/Launch';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import projectStyle from '../styles/Project.module.scss';
 import netflix from '../public/netflix.png';
+import tinder from '../public/tinder.png';
 import Fade from 'react-reveal/Fade';
 
 function Project() {
@@ -44,7 +45,7 @@ function Project() {
                   <span>ReactJs Firebase </span>
                 </div>
                 <div className={projectStyle.links}>
-                  <Link href='/'>
+                  <Link href='https://netflix-clone-fa5ba.web.app/'>
                     <a>
                       <LaunchIcon />
                     </a>
@@ -59,10 +60,10 @@ function Project() {
             </div>
             <div className={projectStyle.project__card}>
               <div className={projectStyle.project__thumbnail}>
-                <Link href='/'>
+                <Link href='https://tinder-clone-4eaf2.web.app/'>
                   <a className={projectStyle.thumb}>
                     <Image
-                      src={netflix}
+                      src={tinder}
                       layout='fill'
                       className={projectStyle.image}
                     />
@@ -71,23 +72,20 @@ function Project() {
                 </Link>
               </div>
               <div className={projectStyle.project__description}>
-                <h4>Netflix Clone</h4>
+                <h4>Tinder Clone</h4>
                 <div className={projectStyle.textSummary}>
-                  <span>
-                    A Simple Netflix Frontend UI built based on reactJs and
-                    integrated with netflix movies based API.
-                  </span>
+                  <span>A Simple Tinder MERN Stack build.</span>
                 </div>
                 <div className={projectStyle.technologies}>
-                  <span>ReactJs Firebase </span>
+                  <span>ReactJs Nodejs </span>
                 </div>
                 <div className={projectStyle.links}>
-                  <Link href='/'>
+                  <Link href='https://tinder-clone-4eaf2.web.app/'>
                     <a>
                       <LaunchIcon />
                     </a>
                   </Link>
-                  <Link href='/'>
+                  <Link href='https://github.com/natachigram/tinder-clone'>
                     <a>
                       <GitHubIcon />
                     </a>
