@@ -34,23 +34,23 @@ const Hero = () => {
               <div></div>
 
               <Link href='https://mobile.twitter.com/natachijs'>
-                <a>
+                <a target='_blank'>
                   <TwitterIcon />
                 </a>
               </Link>
 
               <Link href='https://www.instagram.com/natachi.js/'>
-                <a>
+                <a target='_blank'>
                   <InstagramIcon />
                 </a>
               </Link>
               <Link href='https://www.linkedin.com/in/natachi-nnamaka-156a89209/'>
-                <a>
+                <a target='_blank'>
                   <LinkedInIcon />
                 </a>
               </Link>
               <Link href='https://github.com/natachigram'>
-                <a>
+                <a target='_blank'>
                   <GitHubIcon />
                 </a>
               </Link>
