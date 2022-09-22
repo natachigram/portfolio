@@ -19,8 +19,8 @@ function About() {
             <div className={aboutStyle.aboutBox_text}>
               <p>
                 Hello! My name is Natachi and I love building things that live
-                on the internet. My interest in web development started back in
-                2019 when I decided to try editing custom free themes — turns
+                on the internet. My interest in web development started back few
+                years when I decided to try editing custom free themes — turns
                 out hacking together a custom search button taught me a lot
                 about HTML and CSS!
               </p>
