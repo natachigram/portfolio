@@ -36,16 +36,13 @@ function About() {
               </p>
               <ul>
                 <li>
-                  <div></div> JavaScript (ES6+)
+                  <div></div> JavaScript
                 </li>
                 <li>
-                  <div></div> React
+                  <div></div> React / NextJS
                 </li>
                 <li>
                   <div></div> NodeJS
-                </li>
-                <li>
-                  <div></div> NextJS
                 </li>
                 <li>
                   <div></div> Html 5
@@ -58,7 +55,7 @@ function About() {
           </Fade>
 
           <Fade bottom duration={3000} delay={1000}>
-            <div className={aboutStyle.image}>
+            <div className={aboutStyle.image} layout='intrinsic'>
               <Image src={profilePic} alt='Picture of the author' />
             </div>
           </Fade>
